@@ -1,51 +1,223 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Urban Food</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Urban Bite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
-       <nav>
-        <h1>Urban Bite</h1>
-        <ul>
-            <li>Home</li>
-            <li>Menu</li>
-            <li>Reservation</li>
-        </ul> 
-    </nav>
-    </header>
-
-    <section>
-        <div class="list">
-            <div class="item">
-                <div class="food-img">
-                    <img src="./img/PIZZA.png" alt="pizza photo">
-                </div>
-                <div class="content">
-                    <p class="food-infomation">The best</p>
-                    <h2> Pizza </h2>
-                    <p class="descrition"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta at sint magni error odio quaerat explicabo illum aspernatur repudiandae aliquid. Sit temporibus at, corrupti sapiente dolore reiciendis quas non nesciunt.</p>
-                   <button>Order yours</button>
-                </div>
-            </div>   
+        <div class="logo"><span>Urban <span class="red">Food</span></span></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Services</a>
+            <a href="#">Offers</a>
+        </nav>
+        <div class="header-actions">
+            <a href="#" class="icon-btn"><i class="fa fa-search"></i></a>
+            <a href="#" class="icon-btn notification">
+                <i class="fa fa-bell"></i>
+                <span class="badge">2</span>
+            </a>
+            <a href="#" class="contact-btn">Contact</a>
         </div>
-    </section>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Fuel <span class="red">Your</span> Hustle<br>with <span class="red">Flavor</span></h1>
+                <p>Crafted for cravings. Built for the rush of city life.</p>
+                <div class="hero-buttons">
+                    <a href="#product-cards" class="main-btn">Grab Yours</a>
+                    <a href="#" class="see-options">See Options <i class="fa fa-chevron-down"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/burger.png" alt="Hamburger">
+            </div>
+        </section>
 
-    <div class="arrows">
-        <button><img href="https://ibb.co/cNBn7pg"><img src="https://i.ibb.co/K9Pv3Q0/arrow.png" alt="seta esquerda" border="0"></href=></button>
-        <button><img href="https://ibb.co/cNBn7pg"><img src="https://i.ibb.co/K9Pv3Q0/arrow.png" alt="seta direita" border="0"></href=></button>
-    </div>
+        <section class="product-cards-container">
+            <button class="carousel-button prev">
+                <i class="fa fa-chevron-left"></i>
+            </button>
+            
+            <div class="product-cards">
+                <div class="product-card">
+                    <img src="img/gourmethot.png" alt="Gourmet Quente">
+                    <div class="product-info">
+                        <span class="name">Gourmet Quente</span>
+                        <div class="stars">★★★★★</div>
+                        <span class="price">$ 8,00</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/miniburger.png" alt="Mini Hambúrguer">
+                    <div class="product-info">
+                        <span class="name">Mini Hambúrguer</span>
+                        <div class="stars">★★★★</div>
+                        <span class="price">$ 3,00</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/spicybife.png" alt="Bife Apimentado">
+                    <div class="product-info">
+                        <span class="name">Bife Apimentado</span>
+                        <div class="stars">★★★★★</div>
+                        <span class="price">$ 11,00</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/gourmet_bife.png" alt="Bife Gourmet">
+                    <div class="product-info">
+                        <span class="name">Bife Gourmet</span>
+                        <div class="stars">★★★★★</div>
+                        <span class="price">$ 23,00</span>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-button next">
+                <i class="fa fa-chevron-right"></i>
+            </button>
+        </section>
+         <section class="categories-section">
+            <span class="section-label">CUSTOMER FAVORITES</span>
+            <h2 class="section-title">Popular Categories</h2>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <img src="img/burger (2).png" alt="Burgers">
+                    </div>
+                    <h3>Burgers</h3>
+                    <span class="dish-count">(45 dishes)</span>
+                </div>
 
-    <div class="indicators">
-        <div class="number">01</div>
-        <ul>
-            <li class="active"></li>
-            <li></li>
-            <li></li>
-        </ul>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <img src="img/breakfast.png" alt="Break Fast">
+                    </div>
+                    <h3>Break Fast</h3>
+                    <span class="dish-count">(12 break fast)</span>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <img src="img/pizza (2).png" alt="Pizza">
+                    </div>
+                    <h3>Pizza</h3>
+                    <span class="dish-count">(86 dessert)</span>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <img src="img/icecream.png" alt="Ice cream">
+                    </div>
+                    <h3>Ice cream</h3>
+                    <span class="dish-count">(48 items)</span>
+                </div>
+            </div>
+        </section>
+        <section class="special-dishes">
+    <span class="section-label">SPECIAL DISHES</span>
+    <div class="dishes-header">
+        <h2 class="section-title">Standout Dishes From Our Menu</h2>
+        <div class="navigation-buttons">
+            <button class="nav-button prev">
+                <i class="fa fa-chevron-left"></i>
+            </button>
+            <button class="nav-button next">
+                <i class="fa fa-chevron-right"></i>
+            </button>
+        </div>
     </div>
+    <div class="dishes-carousel">
+        <div class="dish-card">
+            <button class="favorite-btn">
+                <i class="fa fa-heart"></i>
+            </button>
+            <img src="img/bigstackhustle.png" alt="Big Stack Hustle">
+            <div class="dish-info">
+                <h3>Big Stack Hustle</h3>
+                <p>Description of the item</p>
+                <div class="price-rating">
+                    <span class="price">$<span class="amount">8.00</span></span>
+                    <span class="rating">
+                        <i class="fa fa-star"></i>
+                        4.9
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="dish-card">
+            <button class="favorite-btn">
+                <i class="fa fa-heart"></i>
+            </button>
+            <img src="img/splitcitypizza.png" alt="Split City Pizza">
+            <div class="dish-info">
+                <h3>Split City Pizza</h3>
+                <p>Description of the item</p>
+                <div class="price-rating">
+                    <span class="price">$<span class="amount">18.00</span></span>
+                    <span class="rating">
+                        <i class="fa fa-star"></i>
+                        4.6
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="dish-card">
+            <button class="favorite-btn">
+                <i class="fa fa-heart"></i>
+            </button>
+            <img src="img/eggbombburger.png" alt="Egg Bomb Burger">
+            <div class="dish-info">
+                <h3>Egg Bomb Burger</h3>
+                <p>Description of the item</p>
+                <div class="price-rating">
+                    <span class="price">$<span class="amount">10.00</span></span>
+                    <span class="rating">
+                        <i class="fa fa-star"></i>
+                        4.5
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="testimonials">
+    <div class="testimonials-container">
+        <div class="testimonials-image">
+            <img src="img/chef.png" alt="Professional Chef" loading="lazy">
+        </div>
+        <div class="testimonials-content">
+            <span class="section-label">TESTIMONIALS</span>
+            <h2>What Our Customers Say About Us</h2>
+            
+            <div class="testimonial-quote">
+                <p>"I had the pleasure of dining at Foodi last night, and I'm still raving about the experience! The attention to detail in presentation and service was impeccable"</p>
+            </div>
+
+            <div class="customer-feedback">
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <span class="score">4.9</span>
+                    <span class="review-count">(18.6k Reviews)</span>
+                </div>
+                <div class="customer-avatars">
+                    <img src="img/people1.png" alt="Customer 1">
+                    <img src="img/people2.jpeg" alt="Customer 2">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
